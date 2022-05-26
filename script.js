@@ -81,6 +81,7 @@ var phone=document.getElementById("phone").value;
 var your=document.getElementById("your").value;
 var much=document.getElementById("much").value;
   var location=document.getElementById("address").value;
+  var type=document.getElementById("gender").value;
 
 
 if(fname == "")
@@ -176,6 +177,14 @@ if(much== "")
   check=false;
   return check;
 }
+  
+  if(type== "")
+{
+  alert ('gender is required');
+  check=false;
+  return check;
+}
+  
   if(location== "")
 {
   alert ('location is required');
