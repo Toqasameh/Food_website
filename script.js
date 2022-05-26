@@ -93,7 +93,7 @@ if(fname == "")
 }
 if(!fname.match(/^[A-Za-z]+$/))
 {
-alert("only letters or space allowed in name fild");
+alert("only letters allowed in frist name fild");
 check=false;
   return check;
 }
@@ -109,7 +109,7 @@ if(lname == "")
 }
 if(!lname.match(/^[A-Za-z]+$/))
 {
-alert("only letters or space allowed in name fild");
+alert("only letters allowed in last name fild");
 check=false;
   return check;
 }
@@ -163,7 +163,7 @@ if(your== "")
   check=false;
   return check;
 }
-if(!your.match(/^[A-Za-z]+$/))
+if(!your.match(/^[a-zA-Z\s]*$/))
 {
 alert("only letters or space allowed in order fild");
 check=false;
@@ -178,14 +178,18 @@ if(much== "")
   return check;
 }
   
- 
-  
   if(location== "")
 {
   alert ('location is required');
   check=false;
   return check;
 }
+  if(!location.match(/^[a-zA-Z\s]*$/))
+{
+  alert("only letters or space allowed in order fild");
+  check=false;
+    return check;
+  }
   
   
 
