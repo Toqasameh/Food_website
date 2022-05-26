@@ -147,9 +147,9 @@ if(password == "")
   return check;
 }
 
-if(!password.match(/^(?=.*\d)(?!.* )(?=.*[a-z])(?=.*[A-z]{1}).{8}/))
+if(!password.match(/^(?=.*\d)(?!.* )(?=.*[a-z])(?=.*[A-z]{1}).{8}/) || password[0]==password[0].toLowerCase())
 {
-alert("password is not valid ,it must contain 8 characters: one_uppercase , one_lowercase, one_number , one special character at least ");
+alert("password is not valid ,it must contain 8 characters: one_uppercase , one_lowercase, one_number , one special character at least , and no spaces ");
 check=false;
   return check;
 }
