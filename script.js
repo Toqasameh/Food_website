@@ -194,7 +194,7 @@ if(much== "")
 }
   if(!location.match(/^[a-zA-Z\s]*$/))
 {
-  alert("only letters or space allowed in oddress fild");
+  alert("only letters or space allowed in address fild");
   check=false;
     return check;
   }
