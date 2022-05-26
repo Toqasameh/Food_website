@@ -186,6 +186,15 @@ if(much== "")
   return check;
 }
   
+  if(this.radio[0].checked==false && this.radio[1].checked==false)
+{
+  alert('please select gender');
+  check=false;
+  return check;
+}
+  
+  
+  
   if(location== "")
 {
   alert ('location is required');
