@@ -414,7 +414,7 @@
   }
   
   .menu .box-container .box .content .stars i{
-   font-size: 1.7rem;
+   font-size: 1.5rem;
    color:var(--purple);
       padding:.2rem;
   }
@@ -708,11 +708,7 @@
         width:100%;
     }
   
-      .menu .box-container .box .content .stars i{
-   font-size: 1.7rem;
-   color:var(--purple);
-      padding:.4rem;
-  }
+    
       
   }
   
