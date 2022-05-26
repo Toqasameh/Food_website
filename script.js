@@ -80,6 +80,7 @@ var password=document.getElementById("password").value;
 var phone=document.getElementById("phone").value;
 var your=document.getElementById("your").value;
 var much=document.getElementById("much").value;
+  var location=document.getElementById("address").value;
 
 
 if(fname == "")
@@ -175,6 +176,14 @@ if(much== "")
   check=false;
   return check;
 }
+  if(location== "")
+{
+  alert ('location is required');
+  check=false;
+  return check;
+}
+  
+  
 
 if (check==true){
 alert('Thanks'+" "+fname+" "+lname+" "+'for join to us');
