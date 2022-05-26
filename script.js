@@ -81,6 +81,7 @@ var phone=document.getElementById("phone").value;
 var your=document.getElementById("your").value;
 var much=document.getElementById("much").value;
   var location=document.getElementById("address").value;
+  var add=document.getElementById("extra").value;
   
 
 
@@ -151,7 +152,7 @@ if(password == "")
 
 if(!password.match(/^(?=.*\d)(?!.* )(?=.*[a-z])(?=.*[A-z]{1}).{8}/) || password[0]==password[0].toLowerCase())
 {
-alert("password is not valid ,it must contain 8 characters: one_uppercase , one_lowercase, one_number , one special character at least , and no spaces ");
+alert("password is not valid ,it must contain 8 characters: one_uppercase at frist , one_lowercase, one_number , one special character at least , and no spaces ");
 check=false;
   return check;
 }
@@ -166,6 +167,13 @@ if(your== "")
 if(!your.match(/^[a-zA-Z\s]*$/))
 {
 alert("only letters or space allowed in order fild");
+check=false;
+  return check;
+}
+  
+  if(!add.match(/^[a-zA-Z\s]*$/))
+{
+alert("only letters or space allowed in Aditional  fild");
 check=false;
   return check;
 }
@@ -186,7 +194,7 @@ if(much== "")
 }
   if(!location.match(/^[a-zA-Z\s]*$/))
 {
-  alert("only letters or space allowed in order fild");
+  alert("only letters or space allowed in oddress fild");
   check=false;
     return check;
   }
